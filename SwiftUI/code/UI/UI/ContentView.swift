@@ -19,6 +19,17 @@ struct ContentView: View {
             NavigationLink { CustomeModiferView() } label: { Text("自定义Modifer") }
 
             NavigationLink { PickView() } label: { Text("Picker") }
+            NavigationLink { ControlView() } label: { Text("ControlView") }
+            
+            NavigationLink { WebView() } label: { Text("UIKit-WebView") }
+            NavigationLink { UIKitVC() } label: { Text("UIKit-VC") }
+
+            NavigationLink { ListView() } label: { Text("ListView") }
+            NavigationLink { ScrollDemoView() } label: { Text("ScrollDemoView") }
+
+            NavigationLink { GropPage() } label: { Text("GropPage") }
+            NavigationLink { SectionPage() } label: { Text("SectionPage") }
+            NavigationLink { FormPage() } label: { Text("FormPage") }
 
         }
         .navigationTitle("")
