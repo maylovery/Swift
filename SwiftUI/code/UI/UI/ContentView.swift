@@ -25,7 +25,8 @@ struct ContentView: View {
                 
                 NavigationLink { ListView() } label: { Text("ListView") }
                 NavigationLink { ScrollDemoView() } label: { Text("ScrollDemoView") }
-                
+                NavigationLink { CollectionPage() } label: { Text("CollectionPage") }
+
                 NavigationLink { GropPage() } label: { Text("GropPage") }
                 NavigationLink { SectionPage() } label: { Text("SectionPage") }
                 NavigationLink { FormPage() } label: { Text("FormPage") }

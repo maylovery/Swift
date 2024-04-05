@@ -25,6 +25,7 @@
 		66464D432BBFB48F00A53DAD /* ActionSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66464D422BBFB48F00A53DAD /* ActionSheetPage.swift */; };
 		66464D452BBFC04800A53DAD /* ModalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66464D442BBFC04800A53DAD /* ModalPage.swift */; };
 		66464D472BBFC07500A53DAD /* PopOverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66464D462BBFC07500A53DAD /* PopOverPage.swift */; };
+		66464D492BBFC63400A53DAD /* CollectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66464D482BBFC63400A53DAD /* CollectionPage.swift */; };
 		665105E32BBE488200A848D2 /* UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665105E22BBE488200A848D2 /* UIApp.swift */; };
 		665105E52BBE488200A848D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665105E42BBE488200A848D2 /* ContentView.swift */; };
 		665105E72BBE488600A848D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665105E62BBE488600A848D2 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		66464D422BBFB48F00A53DAD /* ActionSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPage.swift; sourceTree = "<group>"; };
 		66464D442BBFC04800A53DAD /* ModalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPage.swift; sourceTree = "<group>"; };
 		66464D462BBFC07500A53DAD /* PopOverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverPage.swift; sourceTree = "<group>"; };
+		66464D482BBFC63400A53DAD /* CollectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPage.swift; sourceTree = "<group>"; };
 		665105DF2BBE488200A848D2 /* UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665105E22BBE488200A848D2 /* UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApp.swift; sourceTree = "<group>"; };
 		665105E42BBE488200A848D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				66464D422BBFB48F00A53DAD /* ActionSheetPage.swift */,
 				66464D442BBFC04800A53DAD /* ModalPage.swift */,
 				66464D462BBFC07500A53DAD /* PopOverPage.swift */,
+				66464D482BBFC63400A53DAD /* CollectionPage.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				66464D1F2BBE979500A53DAD /* TextView.swift in Sources */,
 				66464D412BBF77EB00A53DAD /* AlertPage.swift in Sources */,
 				66464D392BBEF3C400A53DAD /* SectionPage.swift in Sources */,
+				66464D492BBFC63400A53DAD /* CollectionPage.swift in Sources */,
 				66464D472BBFC07500A53DAD /* PopOverPage.swift in Sources */,
 				66464D262BBEC2D500A53DAD /* ButtonView.swift in Sources */,
 				66464D2A2BBED23D00A53DAD /* PickView.swift in Sources */,
