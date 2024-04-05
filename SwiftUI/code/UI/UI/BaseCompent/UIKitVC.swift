@@ -36,7 +36,7 @@ struct ViewControlWapper: UIViewControllerRepresentable {
 
 
 // UIKit的VC
-class LoginVC: UIViewController {
+fileprivate class LoginVC: UIViewController {
     private var name = UITextField()
     private var pass = UITextField()
     private var login = UIButton(type: .system)

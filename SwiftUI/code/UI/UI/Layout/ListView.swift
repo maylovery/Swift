@@ -56,9 +56,38 @@ struct ScrollDemo1View: View {
         }
     }
 }
-
-
+// 直接监听 geometry.frame(in: .global).minY ，拿不到数据
 struct ScrollDemoView: View {
+    @State private var offset: CGFloat = 0
+    var body: some View {
+        VStack {
+            Text("ScrollView offset: \(offset)")
+            ScrollView {
+                
+                ForEach(1...100, id: \.self) { i in
+                    Text("Row \(i)")
+                }.padding()
+
+                GeometryReader { geometry in
+                    Text("占位")
+                        .frame(height: 20)
+                        .onAppear {
+                            withAnimation {
+                                print("\(geometry.frame(in: .global).minY)")
+                                self.offset = geometry.frame(in: .global).minY
+                            }
+                        }
+                }
+                
+                
+            }
+        }
+    }
+}
+
+
+// 真实可以拿到滚动数据
+struct ScrollDemo2View: View {
     @State private var offset: CGFloat = 0
     var body: some View {
         VStack {

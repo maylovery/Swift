@@ -131,6 +131,7 @@ struct PullDownButtonView: View {
                     .onAppear {
                         // 监听滚动位置，当滚动到一定位置时显示按钮
                         let offsetY = geometry.frame(in: .global).minY
+                        print("\(offsetY)")
                         if offsetY < 0 {
                             withAnimation {
                                 self.showButton = true
