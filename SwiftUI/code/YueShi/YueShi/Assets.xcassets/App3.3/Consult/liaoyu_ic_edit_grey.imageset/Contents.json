@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "liaoyu_ic_edit_grey.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "liaoyu_ic_edit_grey@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "liaoyu_ic_edit_grey@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
