@@ -37,6 +37,13 @@ struct ContentView: View {
                 NavigationLink { ActionSheetPage() } label: { Text("ActionSheetPage") }
                 NavigationLink { ModalPage() } label: { Text("ModalPage") }
                 NavigationLink { PopOverPage() } label: { Text("PopOverPage") }
+                NavigationLink { MenuPage() } label: { Text("点击更多Menu弹窗") }
+
+                NavigationLink { GirdPage() } label: { Text("GirdPage") }
+                
+                NavigationLink { SlideMenu() } label: { Text("左侧菜单") }
+                
+                NavigationLink { ProgressSliderPage() } label: { Text("滑动条") }
                 
             }.padding(.top, 0)
         }
