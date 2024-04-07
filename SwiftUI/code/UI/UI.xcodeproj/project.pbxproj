@@ -34,6 +34,11 @@
 		665105E52BBE488200A848D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665105E42BBE488200A848D2 /* ContentView.swift */; };
 		665105E72BBE488600A848D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665105E62BBE488600A848D2 /* Assets.xcassets */; };
 		665105EA2BBE488600A848D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665105E92BBE488600A848D2 /* Preview Assets.xcassets */; };
+		66ED4C202BC2182800D0F49D /* LinkPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C1F2BC2182800D0F49D /* LinkPage.swift */; };
+		66ED4C222BC218BA00D0F49D /* TimelinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C212BC218BA00D0F49D /* TimelinePage.swift */; };
+		66ED4C242BC2D10500D0F49D /* ToolBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C232BC2D10500D0F49D /* ToolBarPage.swift */; };
+		66ED4C262BC2D14900D0F49D /* GradientPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C252BC2D14900D0F49D /* GradientPage.swift */; };
+		66ED4C282BC2D29A00D0F49D /* SearchablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C272BC2D29A00D0F49D /* SearchablePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +70,11 @@
 		665105E42BBE488200A848D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		665105E62BBE488600A848D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		665105E92BBE488600A848D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66ED4C1F2BC2182800D0F49D /* LinkPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPage.swift; sourceTree = "<group>"; };
+		66ED4C212BC218BA00D0F49D /* TimelinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePage.swift; sourceTree = "<group>"; };
+		66ED4C232BC2D10500D0F49D /* ToolBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarPage.swift; sourceTree = "<group>"; };
+		66ED4C252BC2D14900D0F49D /* GradientPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPage.swift; sourceTree = "<group>"; };
+		66ED4C272BC2D29A00D0F49D /* SearchablePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchablePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,11 @@
 				66464D2B2BBEDC7F00A53DAD /* ControlView.swift */,
 				66464D2D2BBEDF7E00A53DAD /* WebView.swift */,
 				66464D2F2BBEE18900A53DAD /* UIKitVC.swift */,
+				66ED4C1F2BC2182800D0F49D /* LinkPage.swift */,
+				66ED4C212BC218BA00D0F49D /* TimelinePage.swift */,
+				66ED4C232BC2D10500D0F49D /* ToolBarPage.swift */,
+				66ED4C252BC2D14900D0F49D /* GradientPage.swift */,
+				66ED4C272BC2D29A00D0F49D /* SearchablePage.swift */,
 			);
 			path = BaseCompent;
 			sourceTree = "<group>";
@@ -222,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66ED4C242BC2D10500D0F49D /* ToolBarPage.swift in Sources */,
 				66464D432BBFB48F00A53DAD /* ActionSheetPage.swift in Sources */,
 				66464D242BBE9F4800A53DAD /* ImageView.swift in Sources */,
 				66464D352BBEE6CC00A53DAD /* ListView.swift in Sources */,
+				66ED4C262BC2D14900D0F49D /* GradientPage.swift in Sources */,
 				66464D2E2BBEDF7E00A53DAD /* WebView.swift in Sources */,
 				66464D302BBEE18900A53DAD /* UIKitVC.swift in Sources */,
 				66464D1F2BBE979500A53DAD /* TextView.swift in Sources */,
@@ -235,7 +252,9 @@
 				66464D472BBFC07500A53DAD /* PopOverPage.swift in Sources */,
 				661902A82BC0F7580006C4EA /* MenuPage.swift in Sources */,
 				66464D262BBEC2D500A53DAD /* ButtonView.swift in Sources */,
+				66ED4C222BC218BA00D0F49D /* TimelinePage.swift in Sources */,
 				66464D2A2BBED23D00A53DAD /* PickView.swift in Sources */,
+				66ED4C202BC2182800D0F49D /* LinkPage.swift in Sources */,
 				665105E52BBE488200A848D2 /* ContentView.swift in Sources */,
 				66464D3B2BBEF3F800A53DAD /* FormPage.swift in Sources */,
 				66464D212BBE97AB00A53DAD /* TextFieldView.swift in Sources */,
@@ -244,6 +263,7 @@
 				66464D3F2BBF6CA200A53DAD /* TabPage.swift in Sources */,
 				66464D2C2BBEDC7F00A53DAD /* ControlView.swift in Sources */,
 				66464D372BBEEC9300A53DAD /* GropPage.swift in Sources */,
+				66ED4C282BC2D29A00D0F49D /* SearchablePage.swift in Sources */,
 				661902A42BC0E4CD0006C4EA /* GirdPage.swift in Sources */,
 				665105E32BBE488200A848D2 /* UIApp.swift in Sources */,
 				661902AA2BC1031F0006C4EA /* ProgressSliderPage.swift in Sources */,

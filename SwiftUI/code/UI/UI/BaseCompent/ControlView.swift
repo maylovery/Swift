@@ -13,6 +13,7 @@ struct ControlView: View {
             ToggleView()
             SliderView()
             StepView()
+            ProgressPage()
         }.padding(.horizontal, 16)
     }
 }
@@ -46,6 +47,26 @@ struct StepView: View {
         VStack {
             Text("总计：\(value)")
             Stepper("每次加减2", value: $value, step: 2)
+        }
+    }
+}
+
+
+struct ProgressPage: View {
+    @State var value: Float = 0
+    @State var total: Float = 100
+
+    var body: some View {
+        VStack {
+            ProgressView("开始", value: value, total: total)
+            ProgressView().progressViewStyle(.circular)
+            
+            Button {
+                value += 1
+            } label: {
+                Text("加1")
+            }
+
         }
     }
 }
