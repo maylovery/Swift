@@ -55,6 +55,10 @@ struct ContentView: View {
                 
                 NavigationLink { SearchablePage() } label: { Text("搜素 SearchablePage") }
                 NavigationLink { PushPopPage() } label: { Text("根据接口返回的结果，跳转不同的Page") }
+                
+                NavigationLink { TodoPage() } label: { Text("TodoPage--代办添加删除移动数据") }
+                NavigationLink { ShopDemoPage() } label: { Text("ShopDemoPage-Appstore首页数据") }
+                
             }
             .onOpenURL(perform: { url in
                 // 可以通过路由 跳转到此界面， 设置 onOpenURL 的处理

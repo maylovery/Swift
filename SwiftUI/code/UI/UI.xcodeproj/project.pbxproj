@@ -42,6 +42,8 @@
 		66ED4C2B2BC354AA00D0F49D /* OutlinkPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C2A2BC354AA00D0F49D /* OutlinkPage.swift */; };
 		66ED4C2E2BC35A1200D0F49D /* PushPopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C2D2BC35A1200D0F49D /* PushPopPage.swift */; };
 		66ED4C302BC3CB5300D0F49D /* StackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C2F2BC3CB5300D0F49D /* StackPage.swift */; };
+		66ED4C322BC3CF7700D0F49D /* TodoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C312BC3CF7700D0F49D /* TodoPage.swift */; };
+		66ED4C342BC3D20100D0F49D /* ShopDemoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED4C332BC3D20100D0F49D /* ShopDemoPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		66ED4C2C2BC3558100D0F49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		66ED4C2D2BC35A1200D0F49D /* PushPopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPopPage.swift; sourceTree = "<group>"; };
 		66ED4C2F2BC3CB5300D0F49D /* StackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackPage.swift; sourceTree = "<group>"; };
+		66ED4C312BC3CF7700D0F49D /* TodoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoPage.swift; sourceTree = "<group>"; };
+		66ED4C332BC3D20100D0F49D /* ShopDemoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDemoPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 			children = (
 				66ED4C2A2BC354AA00D0F49D /* OutlinkPage.swift */,
 				66ED4C2D2BC35A1200D0F49D /* PushPopPage.swift */,
+				66ED4C312BC3CF7700D0F49D /* TodoPage.swift */,
+				66ED4C332BC3D20100D0F49D /* ShopDemoPage.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 				66464D242BBE9F4800A53DAD /* ImageView.swift in Sources */,
 				66464D352BBEE6CC00A53DAD /* ListView.swift in Sources */,
 				66ED4C262BC2D14900D0F49D /* GradientPage.swift in Sources */,
+				66ED4C342BC3D20100D0F49D /* ShopDemoPage.swift in Sources */,
 				66464D2E2BBEDF7E00A53DAD /* WebView.swift in Sources */,
 				66464D302BBEE18900A53DAD /* UIKitVC.swift in Sources */,
 				66464D1F2BBE979500A53DAD /* TextView.swift in Sources */,
@@ -286,6 +293,7 @@
 				66464D372BBEEC9300A53DAD /* GropPage.swift in Sources */,
 				66ED4C282BC2D29A00D0F49D /* SearchablePage.swift in Sources */,
 				661902A42BC0E4CD0006C4EA /* GirdPage.swift in Sources */,
+				66ED4C322BC3CF7700D0F49D /* TodoPage.swift in Sources */,
 				665105E32BBE488200A848D2 /* UIApp.swift in Sources */,
 				661902AA2BC1031F0006C4EA /* ProgressSliderPage.swift in Sources */,
 				66ED4C2B2BC354AA00D0F49D /* OutlinkPage.swift in Sources */,
