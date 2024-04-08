@@ -29,6 +29,7 @@ struct ContentView: View {
                 }
                 
                 Section("布局") {
+                    NavigationLink { StackPage() } label: { Text("StackPage") }
                     NavigationLink { ListView() } label: { Text("ListView") }
                     NavigationLink { ScrollDemoView() } label: { Text("ScrollDemoView") }
                     NavigationLink { CollectionPage() } label: { Text("CollectionPage") }
@@ -53,9 +54,19 @@ struct ContentView: View {
                 NavigationLink { GradientPage() } label: { Text("GradientPage") }
                 
                 NavigationLink { SearchablePage() } label: { Text("搜素 SearchablePage") }
-
-                
-            }.padding(.top, 0)
+                NavigationLink { PushPopPage() } label: { Text("根据接口返回的结果，跳转不同的Page") }
+            }
+            .onOpenURL(perform: { url in
+                // 可以通过路由 跳转到此界面， 设置 onOpenURL 的处理
+                print("url")
+                if url.host() == "tab1" {
+                    // 去首页
+                }
+                if url.host() == "tab2" {
+                    // 去我的
+                }
+            })
+            .padding(.top, 0)
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden()

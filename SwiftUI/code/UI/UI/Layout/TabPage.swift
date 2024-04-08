@@ -19,6 +19,7 @@ struct TabPage: View {
                         Image(systemName: "message.fill")
                         Text("微信")
                     }
+                    .badge(2)
                     .tag(0)
         
                 TabItemPage(index: 1, text: "通讯录")
@@ -26,6 +27,7 @@ struct TabPage: View {
                         Image(systemName: "person.wave.2")
                         Text("通讯录")
                     }
+                    .badge(Text("new"))
                     .tag(1)
                 
                 TabItemPage(index: 2, text: "发现")
