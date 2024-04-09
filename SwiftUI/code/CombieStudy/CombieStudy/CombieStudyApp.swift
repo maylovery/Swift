@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CombieStudyApp: App {
+    @State var title = "CombieDemo"
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }.navigationTitle(title)
         }
     }
 }

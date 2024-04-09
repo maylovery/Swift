@@ -10,11 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            List {
+                NavigationLink("计算器demo") {
+                    Calculator()
+                }                
+            }
         }
+        .navigationTitle(Text("计算器"))
         .padding()
     }
 }
