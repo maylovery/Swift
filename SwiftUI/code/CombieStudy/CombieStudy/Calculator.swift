@@ -12,6 +12,9 @@ struct Calculator: View {
         .digit(1), .digit(2), .digit(3), .op(.plus)
     ]
     let scale: CGFloat = UIScreen.main.bounds.width / 414
+    
+    @State private var brain: CalculatorBrain = .left("0")
+    
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
@@ -144,5 +147,80 @@ struct CalculatorButton : View {
         }
         // 1. Modifier 顺序的影响?
         
+    }
+}
+
+var formatter: NumberFormatter = {
+    let f = NumberFormatter()
+    f.minimumFractionDigits = 0
+    f.maximumFractionDigits = 8
+    f.numberStyle = .decimal
+    return f
+}()
+
+// 计算器的四种状态，定义枚举 左侧数字 + 计算符号 + 右侧数字 + 计算 符号或等号
+enum CalculatorBrain {
+    // 只有数字结果
+    case left(String) //" 1
+    // 文字 加操作符
+    case leftOp(left: String, op: CalculatorButtonItem.Op)  //!" 2
+    // 左数字，操作符，右数字
+    case leftOpRight( left: String, op: CalculatorButtonItem.Op, right: String) // !" 3
+    // 错误
+    case error // !" 4
+    
+
+    var output: String {
+        var result: String = "0"
+        switch self {
+        case .left(let left): 
+            result = left
+        case .leftOp(let left, _):
+            result = left
+        case let .leftOpRight(left, op, right):
+            result = left
+        default: break
+        }
+        guard let value = Double(result) else {
+            return "Error"
+        }
+        return formatter.string(from: value as NSNumber)!
+    }
+    
+    func apply(item: CalculatorButtonItem) -> CalculatorBrain {
+        switch item {
+        case .digit(let num):
+            return apply(num: num)
+        case .dot:
+            return applyDot()
+        case .op(let op):
+            return apply(op: op)
+        case .command(let command):
+            return apply(command: command)
+        }
+    }
+    
+    func apply(num: Int) -> CalculatorBrain  {
+        return CalculatorBrain.error
+    }
+    func apply(op: CalculatorButtonItem.Op) -> CalculatorBrain {
+        return CalculatorBrain.error
+    }
+    func apply(command: CalculatorButtonItem.Command) -> CalculatorBrain {
+        return CalculatorBrain.error
+    }
+    func applyDot() -> CalculatorBrain {
+        return CalculatorBrain.error
+    }
+    
+}
+
+typealias CalculatorState = CalculatorBrain
+typealias CalculatorStateAction = CalculatorButtonItem
+
+
+struct Reducer { 
+    static func reduce(state: CalculatorState, action: CalculatorStateAction) -> CalculatorState {
+        return state.apply(item: action)
     }
 }
